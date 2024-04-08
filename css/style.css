@@ -132,24 +132,42 @@ img {
 
     .container {
     max-width: 768px;
-    margin: 0 auto;
-    
-}
-.steps .col {
-    width: calc(100% / 3);
-}
-.why-us .col-left {
-    width: 40%;
+    margin: 0 auto;   
+    }
+    .steps .col {
+        width: calc(100% / 3);
+    }
+    .why-us .col-left {
+        width: 40%;
+    }
+
+    .why-us .col-right {
+        width: 60%;
+    }
+    .row{
+        flex-wrap: nowrap;
+    }
+
 }
 
-.why-us .col-right {
-    width: 60%;
+
+@media screen and (max-width:480px) {
+
+    .container{
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .steps .col{
+        width: 100%;
+    }
+    .lessons .col{
+        width: 100%;
+    }
+    .why-us .col{
+        width: 100%;
+    }
 }
-.row{
-    flex-wrap: nowrap;
-}
-
-}
-
-
-
